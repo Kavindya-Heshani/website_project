@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>TastyBites Restaurant</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="test1" href="test1.html">
+</head>
+<body class="menu">
+    <section class="t1">
+    <h1>TastyBites Restaurant</h1>
+     <nav class="t2">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </section>
+    <div class="container">
+        <form>
+        <h2>Small dishes</h2>
+        <ul class="category">
+            <li>French Fries - 200LKR <input type="checkbox"></li>
+            <li>Garlic Bread - 200LKR <input type="checkbox"></li>
+            <li>Spring Rolls - 100LKR <input type="checkbox"></li>
+        </ul>
+
+        <h2>The main dishes</h2>
+        <ul class="category">
+            <li>Margherita Pizza - 800LKR <input type="checkbox"></li>
+            <li>Cheeseburger - 300LKR  <input type="checkbox"></li>
+            <li>Spaghetti Alfredo - 450LKR <input type="checkbox"></li>
+        </ul>
+
+        <h2>Desserts</h2>
+        <ul class="category">
+            <li>Chocolate Cake - 600LKR <input type="checkbox"></li>
+            <li>Ice Cream - 250LKR <input type="checkbox"></li>
+            <li>Fruit Salad - 300LKR <input type="checkbox"></li>
+        </ul>
+
+        <h2>Beverages</h2>
+        <ul class="category">
+            <li>Coke - 250LKR <input type="checkbox"></li>
+            <li>Fresh Orange Juice - 200LKR <input type="checkbox"></li>
+            <li>Coffee - 150LKR <input type="checkbox"></li>
+        </ul>
+        <br><br>
+<button type="button" onclick="calculateTotal()" >Place Order</button>
+
+<h3 id="totalPrice"></h3>
+<p id="orderMessage"></p>
+        </form>
+    </div>
+    <script src="script.js"></script>
+
+</body>
+</html>
