@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>TastyBites Restaurant</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="contactus">
+    <section class="t1">
+    <h1>TastyBites Restaurant</h1>
+        <nav class="t2">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </section>
+    <header class="head">
+    <h1>Contact Us</h1>
+    <p>We would love to hear from you</p>
+</header>
+
+
+<section class="contact-info">
+    <h2>Get in Touch</h2>
+    <p><strong>Address:</strong> No. 25, Main Street, Colombo, Sri Lanka</p>
+    <p><strong>Phone:</strong> +94 77 000 0000</p>
+    <p><strong>Email:</strong> tastybites@gmail.com</p>
+    <p><strong>Opening Hours:</strong> 10.00 AM – 10.00 PM</p>
+</section>
+
+
+<section class="contact-form">
+    <form onsubmit="showSuccessMessage(event)">
+        <h2>Send Us a Message</h2>
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <input type="text" placeholder="Phone Number">
+        <textarea placeholder="Your Message" required></textarea>
+
+        <button type="submit">Send Message</button>
+    </form>
+     <p id="success-message" class="success-message">
+            Your message has been sent successfully!
+        </p>
+</section>
+<section class="map">
+    <h2>Find Us</h2>
+    <iframe
+        src="https://www.google.com/maps?q=Colombo%20Sri%20Lanka&output=embed"
+        width="100%"
+        height="350"
+        style="border:0;"
+        allowfullscreen=""
+        loading="lazy">
+    </iframe>
+</section>
+<script>
+function showSuccessMessage(event) {
+    event.preventDefault(); 
+    const form = event.target;
+    form.style.display = "none";
+    const message = document.getElementById("success-message");
+    message.style.display = "block";
+}
+</script>
+</body>
+</html>
